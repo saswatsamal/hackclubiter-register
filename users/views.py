@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .forms import UserForm
 
 def index(request):
-    return render(request, 'users/index.html')
+    return render(request, 'users/register.html')
 def user_view(request):
     if request.method == 'POST':
         form = UserForm(request.POST)
